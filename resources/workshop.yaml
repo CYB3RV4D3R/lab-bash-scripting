@@ -3,23 +3,23 @@ kind: Workshop
 metadata:
   name: lab-bash-scripting
 spec:
-  title: Bash Scripting
-  description: A workshop for bash scripting 
-  vendor: eduk8s.io
+  content:
+    files: github.com/CYB3RV4D3R/lab-bash-scripting
+    image: docker.io/cpauley/cpauley-repo:dso-container
+  description: bash scripting
   difficulty: beginner
   duration: 15m
-  url: https://github.com/CYB3RV4D3R/lab-bash-scripting
-  content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/CYB3RV4D3R/lab-bash-scripting
   session:
-    namespaces:
-      budget: small
     applications:
-      terminal:
-        enabled: true
-        layout: split
       console:
         enabled: true
       editor:
         enabled: true
+      terminal:
+        enabled: true
+        layout: split
+    namespaces:
+      budget: small
+  title: Bash Scripting
+  url: https://github.com/CYB3RV4D3R/lab-bash-scripting
+  vendor: eduk8s.io
