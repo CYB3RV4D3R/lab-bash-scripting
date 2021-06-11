@@ -6,7 +6,7 @@ spec:
   content:
     files: github.com/CYB3RV4D3R/lab-bash-scripting
     image: docker.io/cpauley/cpauley-repo:dso-container
-  description: bash scripting
+  description: A basic bash scripting course 
   difficulty: beginner
   duration: 15m
   session:
@@ -20,6 +20,6 @@ spec:
         layout: split
     namespaces:
       budget: small
-  title: Bash Scripting
+  title: 2. Bash Scripting
   url: https://github.com/CYB3RV4D3R/lab-bash-scripting
   vendor: eduk8s.io
