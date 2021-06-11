@@ -1,4 +1,4 @@
-#### Bash Scripting
+#### Bash Scripting Introduction
 
 We will be discussing the components of a bash shell script and how to create simple scripts to automate tasks and redundant commands a linux admin or engineer might run into. 
 

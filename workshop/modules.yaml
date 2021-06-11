@@ -3,7 +3,7 @@ modules:
         name: Bash Overview
         exit_sign: Start Lab
     exercises/bash-scripting/bash-scripting:
-        name: Linux Basics
+        name: Bash Scripting
     exercises/bash-scripting/bash-components:
         name: Components of a Shell Script 
     exercises/bash-scripting/creating-basic-script:
