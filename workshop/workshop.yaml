@@ -2,7 +2,7 @@ name: Basic Bash Scripting
 
 modules:
     activate:
-    - DSO-overview
+    - bash-overview
     - exercises/bash-scripting/bash-scripting
     - exercises/bash-scripting/bash-components
     - exercises/bash-scripting/creating-basic-script
