@@ -1,8 +1,11 @@
-name: Markdown Sample
+name: Basic Bash Scripting
 
 modules:
     activate:
-    - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
-    - workshop-summary
+    - DSO-overview
+    - exercises/bash-scripting/bash-scripting
+    - exercises/bash-scripting/bash-components
+    - exercises/bash-scripting/creating-basic-script
+    - exercises/bash-scripting/control-structures
+    - exercises/bash-scripting/processing-text
+    - exercises/bash-scripting/shell-functions

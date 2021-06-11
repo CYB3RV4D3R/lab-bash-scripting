@@ -1,1 +1,7 @@
-This is the initial landing page for your workshop. Include in this page a description of what your workshop is about.
+#### Course Outline
+## Basic Bash Scripting
+- Components of a shell script
+- Creating a basic shell script
+- Control structures
+- Processing text
+- Shell functions
