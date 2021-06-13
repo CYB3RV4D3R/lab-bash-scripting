@@ -38,8 +38,9 @@ Next you will add the commands that you will want to execute within the shell. O
 ```execute
 vim mysecondscript.sh
 ```
+**first press i on your keyboard to get into insert mode within vim. This allows you to type, paste, and move to the next line. Put the cursor on the line below the comment which should be line 3 and paste the below contents.**
 
-**copy the below contents within mysecondscript.sh right below the previous comment**
+**copy the below contents within mysecondscript.sh right below the comment**
 
 ```copy
 declare -i NUM1
