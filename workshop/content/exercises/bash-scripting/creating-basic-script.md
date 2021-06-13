@@ -5,7 +5,13 @@ Bash scripts can be very basic to extremely complex. The previous example was a 
 Always specify the shell within the first line of the file as mentioned before.
 
 ```execute
-echo "#!/bin/bash" >> mysecondscript.sh
+vim mysecondscript.sh
+```
+
+copy the below command to your terminal window that has *mysecondscript.sh* open.
+
+```copy
+#!/bin/bash
 ```
 
 ```execute
