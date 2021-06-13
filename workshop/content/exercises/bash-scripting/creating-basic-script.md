@@ -37,6 +37,9 @@ Next you will add the commands that you will want to execute within the shell. O
 
 ```execute
 echo "
+declare -i NUM1
+declare -i NUM2
+declare -i TOTAL
 echo "Enter a number: "
 read NUM1
 echo "Enter a second number: "
@@ -47,7 +50,8 @@ exit 0
 " >> mysecondscript.sh
 ```
 
-- First you will notice the echo commands simply displaying string text asking for a number and a second number.
+- First you will notice the declare commands. This is needed for not declaring the variables will only print out literally the first and second number as a string and not as integers. 
+- Next you will notice the echo commands simply displaying string text asking for a number and a second number.
 - Next you will notice the read command. This command will ask input from the user and store it within a variable specified. In this case there is NUM1 and NUM2 variables. 
 - Then there is another variable named TOTAL. With this variable we are using simple math operators to add the two variables together. You will notice the dollar signs ($). The $ calls that specific variable.
 - The last echo command will display the string of text and also call the TOTAL variable using the $. 
