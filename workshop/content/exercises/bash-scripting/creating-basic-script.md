@@ -54,8 +54,9 @@ TOTAL=$NUM1+$NUM2
 echo "The sum of these numbers is " $TOTAL
 exit 0
 ```
+**very important now that you are in insert mode in vim you will need to press ESC to get out of insert mode so you can type in :wq to exit and save the file.**
 
-**type :wq to exit and save the file**
+Other interesting commands to know besides **:wq** is **:q!** to exit a file without saving it. Very useful when you did mistakes you do not want to save the changes. Another command is **:set paste** which allows you to disable automated indenting then type **:set nopaste** after you pasted the content. Another command is **:set number** which allows you to set numbers along the side of the terminal. This allows you to quickly see which line a code snippit is on. This is greatly helpful for errors that occur specifying a line of code the error occured on. 
 
 - First you will notice the declare commands. This is needed for not declaring the variables will only print out literally the first and second number as a string and not as integers. 
 - Next you will notice the echo commands simply displaying string text asking for a number and a second number.
