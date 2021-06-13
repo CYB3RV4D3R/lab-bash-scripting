@@ -13,7 +13,7 @@ vim mysecondscript.sh
 ```copy
 #!/bin/bash
 ```
-**Then type **:wq** to save your file and exit.**
+**Then type :wq to save your file and exit.**
 
 ```execute
 cat mysecondscript.sh
