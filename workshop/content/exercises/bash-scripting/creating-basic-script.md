@@ -36,7 +36,12 @@ cat mysecondscript.sh
 Next you will add the commands that you will want to execute within the shell. Order matters and will read line by line one at a time. 
 
 ```execute
-echo "
+vim mysecondscript.sh
+```
+
+**copy the below contents within mysecondscript.sh right below the previous comment**
+
+```copy
 declare -i NUM1
 declare -i NUM2
 declare -i TOTAL
@@ -47,8 +52,9 @@ read NUM2
 TOTAL=$NUM1+$NUM2
 echo "The sum of these numbers is " $TOTAL
 exit 0
-" >> mysecondscript.sh
 ```
+
+**type :wq to exit and save the file**
 
 - First you will notice the declare commands. This is needed for not declaring the variables will only print out literally the first and second number as a string and not as integers. 
 - Next you will notice the echo commands simply displaying string text asking for a number and a second number.
