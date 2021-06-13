@@ -25,5 +25,12 @@ spec:
   workshops:
   - name: lab-workshop-builder
   - name: lab-dso-training
-  - name: lab-bash-scripting
   - name: lab-linux-basics
+  - name: lab-bash-scripting
+  - name: lab-python-basics
+  - name: lab-yaml
+  - name: lab-ytt
+  - name: lab-kubernetes
+  - name: lab-cloud-essentials
+  - name: lab-security
+  - name: lab-logs-and-events
