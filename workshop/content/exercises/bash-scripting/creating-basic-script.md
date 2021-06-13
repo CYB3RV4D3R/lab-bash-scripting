@@ -56,21 +56,21 @@ exit 0
 ```
 **very important now that you are in insert mode in vim you will need to press ESC to get out of insert mode so you can type in :wq to exit and save the file.**
 
+- First you will notice the declare commands. This is needed as by not declaring the variables it will only print out the first and second number as a string and not as integers. 
+- Next you will notice the echo commands simply displaying string text asking for a number and a second number.
+- Next you will notice the read command. This command will ask input from the user and store it within a variable specified. In this case there is NUM1 and NUM2 variables. 
+- Then there is another variable named TOTAL. With this variable we are using simple math operators to add the two variables together. You will notice the dollar signs ($). The $ calls that specific variable.
+- The last echo command will display the string of text and also call the TOTAL variable using the $. 
+
 Other interesting commands to know besides **:wq** is:
 
-**:q!** to exit a file without saving it. Very useful when you did mistakes you do not want to save the changes. 
+**:q!** to exit a file without saving it. Very useful when you did mistakes that you do not want to save and just want to quit the vim editor.
 
 **:set paste** which allows you to disable automated indenting.
 
 **:set nopaste** after you pasted the content with the previous set paste command.
 
 **:set number** which allows you to set numbers along the side of the terminal. This allows you to quickly see which line a code snippit is on. This is greatly helpful for errors that occur specifying a line of code the error occured on. 
-
-- First you will notice the declare commands. This is needed for not declaring the variables will only print out literally the first and second number as a string and not as integers. 
-- Next you will notice the echo commands simply displaying string text asking for a number and a second number.
-- Next you will notice the read command. This command will ask input from the user and store it within a variable specified. In this case there is NUM1 and NUM2 variables. 
-- Then there is another variable named TOTAL. With this variable we are using simple math operators to add the two variables together. You will notice the dollar signs ($). The $ calls that specific variable.
-- The last echo command will display the string of text and also call the TOTAL variable using the $. 
 
 We will need to chmod the file to allow executable permissions:
 
