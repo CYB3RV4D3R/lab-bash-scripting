@@ -8,11 +8,12 @@ Always specify the shell within the first line of the file as mentioned before.
 vim mysecondscript.sh
 ```
 
-copy the below command to your terminal window that has *mysecondscript.sh* open.
+**copy the below command to your terminal window that has *mysecondscript.sh* open.**
 
 ```copy
 #!/bin/bash
 ```
+**Then type **:wq** to save your file and exit.**
 
 ```execute
 cat mysecondscript.sh
