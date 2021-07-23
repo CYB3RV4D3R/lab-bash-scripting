@@ -24,7 +24,7 @@ cat mysecondscript.sh
 It is good practice to add comments to your script to let others know what the script's purpose is.
 
 ```execute
-echo "#A script that adds varibles together" >> mysecondscript.sh
+echo "# A script that adds varibles together" >> mysecondscript.sh
 ```
 
 ```execute
