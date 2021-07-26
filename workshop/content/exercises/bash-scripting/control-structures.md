@@ -8,7 +8,7 @@ The two different kinds of control structures are loops and conditional.
 
 #### IF STATEMENT
 
-IF statement allows you to make a decision in the program based on conditions specified. If the condition is met then the program will execute the lines of code specified otherwise, the program will execute the other tasks specified. As you see in the example below for the structure of an **if statement** that you finish off the block of code with *fi* 
+IF statement allows you to make a decision in the program based on conditions specified. If the condition is met then the program will execute the lines of code specified otherwise, the program will execute the other tasks specified. As you see in the example below for the structure of an *if statement* **NOTE**: that you finish off the block of code with *fi* 
 
 A single decision:
 ```
@@ -48,7 +48,7 @@ cat << EOF >> simplescript.sh
 #!/bin/bash
 cd
   ls
-  if [ -e simplescript.sh]
+  if [ -e simplescript.sh ]
   then
     echo "file exists!"
   else
@@ -60,6 +60,10 @@ Once this code is copied into the terminal and saved as *simplescript.sh* then y
 
 ```execute
 chmod +x simplescript.sh 
+```
+check to see the file is executable:
+```execute
+ll
 ```
 
 execute the script:
