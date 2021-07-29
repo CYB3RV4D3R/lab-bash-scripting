@@ -113,16 +113,17 @@ cat << EOF >> case_example.sh
 echo "What month where you born in?"
 read MONTH
 
-case $MONTH in
-  January | February | March ) echo "Being born in" $MONTH" you were born in the first quarter."
-  ;;
-  April | May | June ) echo "Being born in" $MONTH" you were born in the second quarter."
-  ;;
-  July | August | September ) echo "Being born in" $MONTH" you were born in the third quarter."
-  ;;
-  October | November | December ) echo "Being born in" $MONTH" you were born in the last quarter."
-  * ) echo "Sorry, that month is invalid."
-  ;;
+case "$MONTH" in
+    January | February | March ) echo "Being born in" $MONTH" you were born in the first quarter."
+    ;;
+    April | May | June ) echo "Being born in" $MONTH" you were born in the second quarter."
+    ;;
+    July | August | September ) echo "Being born in" $MONTH" you were born in the third quarter."
+    ;;
+    October | November | December ) echo "Being born in" $MONTH" you were born in the last quarter."
+    ;;
+    * ) echo "Sorry, that month is invalid."
+    ;;
 esac
 exit 0
 EOF
