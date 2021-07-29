@@ -134,6 +134,10 @@ chmod +x case_example.sh
 ```execute
 ll
 ```
+Execute the command and be mindful it is case sensitive when you type your response:
 ```execute
 ./case_example.sh
 ```
+
+## LOOPING STRUCTURES
+
