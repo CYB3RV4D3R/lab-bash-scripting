@@ -125,4 +125,14 @@ case $MONTH in
   ;;
 esac
 exit 0
+EOF
+```
+```execute
+chmod +x case_example.sh
+```
+```execute
+ll
+```
+```execute
+./case_example.sh
 ```
