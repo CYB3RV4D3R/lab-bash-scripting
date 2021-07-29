@@ -106,14 +106,14 @@ Essentially the case statement compares the value of the variable to the list of
 For example, we could create a script that asks users what month they were born in. Depending on the response that is given, we give the script to provide a custom response using the case statement. Here is an example:
 
 ```execute 
-cat << EOF >> case_example.sh
+cat << 'EOF' >> case_example.sh
 #!/bin/bash
 # a simple script for a case statement
 
 echo "What month where you born in?"
 read MONTH
 
-case "$MONTH" in
+case $MONTH in
     January | February | March ) echo "Being born in" $MONTH" you were born in the first quarter."
     ;;
     April | May | June ) echo "Being born in" $MONTH" you were born in the second quarter."
