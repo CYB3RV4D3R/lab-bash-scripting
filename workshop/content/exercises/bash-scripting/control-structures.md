@@ -169,7 +169,7 @@ A for loop structure example:
 ```execute
 cat << 'EOF' >> for_loop1.sh
 #!/bin/bash
-for i in 'seq 15'
+for i in `seq 15`
     do
         echo "The current number is $i."
     done
