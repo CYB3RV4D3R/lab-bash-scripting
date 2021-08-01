@@ -10,7 +10,7 @@ When you are piping output to the shell or processing text streams within a scri
 - uniq
 - wc
 
-## CUT 
+### CUT command
 
 The *cut* command is used to print columns or fields that you specify from a file to the standard output. *by default, the tab character is used as a delimiter*. 
 
@@ -26,7 +26,7 @@ The following example is using the cut command to display all group names from t
 cut -d: -f1 /etc/group
 ```
 
-## FMT
+### FMT command
 
 The *fmt* command is to reformat a text file. Most commonly use the fmt command to change the wrapping of long lines within a file to a more readable width. 
 The fmt syntax: **fmt *option filename***.
@@ -34,7 +34,7 @@ Example: **fmt -w 80 *filename***
 
 You can conjure up a file that has more than 100 characters and practice using the fmt command to make the file more manageable. 
 
-## JOIN & PASTE
+### JOIN & PASTE commands
 
 The *join* command prints a line from each of the two specified input files. The first field is the default join field delimited by white space. You can use different join fields by using the **-j *field*** option.
 
@@ -69,7 +69,7 @@ Another example of paste with delimiter of a colon:
 paste -d: firstnames.txt lastnames.txt
 ```
 
-## NL
+### NL command
 
 The *nl* command determines the number of lines in a file printed off to the left side of the output.
 
@@ -83,5 +83,5 @@ Example 2:
 nl firstnames.txt
 ```
 
-## SED & AWK
+### SED & AWK commands
 
