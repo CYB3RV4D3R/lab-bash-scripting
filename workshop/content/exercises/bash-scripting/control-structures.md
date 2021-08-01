@@ -201,7 +201,7 @@ EOF
 chmod +x for_loop2.sh
 ```
 ```execute-2
-./for_loop.sh
+./for_loop2.sh
 ```
 
 A *while loop* example:
@@ -223,7 +223,7 @@ chmod +x while_loop.sh
 ```
 
 A *until loop* example:
-```
+```execute
 cat << 'EOF' >> until_loop.sh
 #!/bin/bash 
 COUNTER=20
@@ -232,6 +232,12 @@ until [  $COUNTER -lt 10 ]; do
    let COUNTER-=1
 done
 EOF
+```
+```execute
+chmod +x until_loop.sh
+```
+```execute
+./until_loop.sh
 ```
 
 ## Now get to practicing your own control structures using the ones provided as guides to creating loop statements within your own bash scripts!
