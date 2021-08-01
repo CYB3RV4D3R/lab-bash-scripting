@@ -141,3 +141,97 @@ Execute the command and be mindful it is case sensitive when you type your respo
 
 ## LOOPING STRUCTURES
 
+There are three looping structures variants: *while loop*, *until loop*, and *for loop*.
+
+- **while loop** executes over and over until a specified condition is no longer *true* and evaluates to *false*.
+
+The structure of a while condition:
+```
+while condition
+do
+    list of commands
+done
+```
+
+- **until loop** works in the opposite manner as the while loop, an until loop runs over and over as long as the condition is *false*. Once the condition evaluates to *true*, the until loop will end. 
+
+The structure of a until condition:
+```
+until condition
+do
+    list of commands
+done
+```
+
+- **for loop** loops only for a specific amount of times rather that the *while* and *until* loops loop indefinitely until a specified condition is met. A very common command that is used in *for* loops is the **seq** command to create a sequence of numbers to determine how many times it will loop. 
+
+A for loop structure example:
+```execute
+cat << 'EOF' >> for_loop1.sh
+#!/bin/bash
+for i in 'seq 15'
+    do
+        echo "The current number is $i."
+    done
+exit 0
+EOF
+```
+```execute
+chmod +x for_loop1.sh
+```
+```execute
+./for_loop1.sh
+```
+
+**NOTE**: The greatest danger with looping structures is that it is possible to get stuck in the infinite loop. The condition never changes to a value that will break the loop. The only way to break out of an infinite loop is by pressing *CTRL+C*. 
+
+Lets create a basic script with control structures!
+
+Another *for loop* example:
+```execute-2
+cat << 'EOF' >> for_loop2.sh
+#!/bin/bash
+for i in $( ls ); do
+    echo item: $i
+done
+exit 0
+EOF
+```
+```execute-2
+chmod +x for_loop2.sh
+```
+```execute-2
+./for_loop.sh
+```
+
+A *while loop* example:
+```execute
+cat << 'EOF' >> while_loop.sh
+#!/bin/bash 
+COUNTER=0
+while [  $COUNTER -lt 10 ]; do
+   echo The counter is $COUNTER
+   let COUNTER=COUNTER+1 
+done
+EOF
+```
+```execute
+chmod +x while_loop.sh
+```
+```execute
+./while_loop.sh
+```
+
+A *until loop* example:
+```
+cat << 'EOF' >> until_loop.sh
+#!/bin/bash 
+COUNTER=20
+until [  $COUNTER -lt 10 ]; do
+   echo COUNTER $COUNTER
+   let COUNTER-=1
+done
+EOF
+```
+
+## Now get to practicing your own control structures using the ones provided as guides to creating loop statements within your own bash scripts!
