@@ -92,7 +92,7 @@ sed command example:
 sed s/word1/word2/
 ```
 
-The *s* command syntax is used to specify a text string to replace with another text string. In the above example you are searching for *word1* then replacing it with *word2*. Another option is to used **d** which deletes the specified text. for example you would type *sed /word3/d* which would search for the word3 and delete it. 
+The *s* command syntax is used to specify a text string to replace with another text string with the *s* meaning substitute. In the above example you are searching for *word1* then replacing it with *word2*. Another option is to used **d** which deletes the specified text. for example you would type *sed /word3/d* which would search for the word3 and delete it. 
 
 First lets cat some text strings into a file:
 ```execute
@@ -103,3 +103,68 @@ Next lets use the sed command againt this file:
 ```execute
 cat sed_example.txt | sed s/exercise/course/
 ```
+
+You will notice that it does not save the changes:
+```execute
+cat sed_example.txt
+```
+
+To save the changes you have to redirect into a new file:
+```execute
+cat sed_example.txt | sed s/exercise/course/ > new_sed_example.txt
+```
+```execute
+cat new_sed_example.txt
+```
+
+As you can see the word *exercise* was replaced by *course*. If there is more than one of the same word and want to replace all of them you simply add the *g* at the end i.e **sed s/word1/word2/g**. **the g in this example stands for global which means all matching occurances in the line would be replaced**. This format also works when your using the text editor such as vim. You will just type **:%s/word1/word2/g** while in the editor. *If you are in **insert** mode in vim you will need to hit **esc** to get out of insert mode to run the search and replace feature* The sed tool is very powerful and useful in DevSecOps and any system administrator role. You will find yourself searching and replacing terms within files quite often. 
+
+The next command we will discuss is the *awk* command. Like sed, awk can be used to receive output from another command as its stdin and manipulate it in a manner you specify. However, awk treats each line of text it receives as a record. Each word in the line, seperated by a space or tab character, is treated as a seperated field within the record. 
+
+Consider this file:
+```execute
+echo "This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+This is line 6" > awk_example.txt
+```
+```execute
+cat awk_example.txt
+```
+
+You can see this file, in the view of *awk* has 6 "records" because there is 6 lines of seperated text. Also, awk delimits *fields* by whitespace so each "record" carries four *fields*. Each field is referenced by **$field_number**. For example, the first field would be **$1**, and the second field **$2**, and so on. 
+
+The awk syntax:
+```
+awk 'pattern {manipulation}'
+```
+
+An awk example to only print the 3rd and 4th fields from a file:
+```execute
+cat awk_example.txt | awk '{print $3,$4}'
+```
+
+An awk example to include a pattern that prints a record with a pattern of *line* and also print the 1st, 2nd, and 4th field in those records:
+```execute
+cat awk_example.txt | awk '/line/ {print $1,$2,$4}'
+```
+
+Then another example like the one above but to match a pattern of *4*:
+```execute
+cat awk_example.txt | awk '/4/ {print $1,$2,$4}'
+```
+
+You can also add your own text to the output and control characters to the output by using the following:
+- **\t** inserts a tab character
+- **\n** adds a newline character
+- **\f** adds a form feed character
+- **\r** adds a carriage return character
+  
+For example:
+```execute
+cat awk_example.txt | awk '/line/ {print "Field 1: "$1"\t", "Field 2: "$2"\t", "Field 4: "$4"\t"}'
+```
+
+This searches for the pattern *line* and then prints the strings "Field 1", "Field 2", and "Field 4". The corresponding *$field_number* is referenced and the *\t* option is used to insert a tab character in between each field. 
