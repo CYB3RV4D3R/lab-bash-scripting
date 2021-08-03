@@ -85,3 +85,21 @@ nl firstnames.txt
 
 ### SED & AWK commands
 
+The **sed** command is a *stream* text editor. Unlike, vi or vim, a stream editor takes a stream of text as its stdin and then performs operations on it that you specify. Then, sed sends the results to stdout.
+
+sed command example:
+```
+sed s/word1/word2/
+```
+
+The *s* command syntax is used to specify a text string to replace with another text string. In the above example you are searching for *word1* then replacing it with *word2*. Another option is to used **d** which deletes the specified text. for example you would type *sed /word3/d* which would search for the word3 and delete it. 
+
+First lets cat some text strings into a file:
+```execute
+echo "This is a lovely bash scripting exercise!" > sed_example.txt
+```
+
+Next lets use the sed command againt this file:
+```execute
+cat sed_example.txt | sed s/exercise/course/
+```
